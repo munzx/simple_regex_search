@@ -1,0 +1,27 @@
+{
+  "name": "simple_regex_search",
+  "version": "1.0.0",
+  "description": "A very light-weight and simple NodeJS module to build regex search query .",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/munzx/simple_regex_search.git"
+  },
+  "keywords": [
+    "regex",
+    "nodejs",
+    "search"
+  ],
+  "author": "munzir suliman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/munzx/simple_regex_search/issues"
+  },
+  "homepage": "https://github.com/munzx/simple_regex_search#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
