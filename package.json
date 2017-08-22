@@ -1,6 +1,6 @@
 {
   "name": "simple_regex_search",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A very light-weight and simple NodeJS module to build regex search query .",
   "main": "index.js",
   "scripts": {
