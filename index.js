@@ -8,7 +8,7 @@ function search(words, combined){
 
 	//stringify object to make it search able
 	if(isObject(words) && !isArray(words)){
-		words = JSON.stringify()words;
+		words = JSON.stringify(words);
 	}
 
 	if(_.isArray(words)){
