@@ -7,7 +7,7 @@ function search(words, combined){
 	var query = '';
 
 	//stringify object to make it search able
-	if(isObject(words) && !isArray(words)){
+	if(_.isObject(words) && !_.isArray(words)){
 		words = JSON.stringify(words);
 	}
 
