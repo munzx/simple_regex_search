@@ -5,6 +5,12 @@ function search(words, combined){
 	var combined = combined || false;
 	var exp = '';
 	var query = '';
+
+	//stringify object to make it search able
+	if(isObject(words) && !isArray(words)){
+		words = JSON.stringify()words;
+	}
+
 	if(_.isArray(words)){
 		if(combined){
 			_.forEach(words, function(word){
