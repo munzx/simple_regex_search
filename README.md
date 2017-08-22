@@ -27,13 +27,13 @@ The default value of the combined flag is false.
 > would return true
 
 
-`example.test('test');`
+`example('test');`
 
 
 > would return false
 
 
-`example.test('something else');`
+`example('something else');`
 
 
 **Many Phrases | Array**
@@ -48,10 +48,10 @@ The default value of the combined flag is false.
 > would return false
 
 
-`example2.test('test');`
+`example2('test');`
 
 
 > would return true
 
 
-`example2.test('The order of ValueB and ValueA is not important');`
+`example2('The order of ValueB and ValueA is not important');`
