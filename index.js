@@ -1,7 +1,7 @@
  var _ = require('lodash');
 
 //return a regular expression string to be used for performing search for the keywords on any text
-function search(words, combined){
+function search(words, combined, caseSensitive){
 	var combined = combined || false;
 	var exp = '';
 	var query = '';
@@ -33,11 +33,21 @@ function search(words, combined){
 		}
 	}
 
-	if(combined){
-		query = new RegExp('^' + exp + '.*$');
+	if(caseSensitive){
+		if(combined){
+			query = new RegExp('^' + exp + '.*$');
+		} else {
+			query = new RegExp(exp);
+		}
 	} else {
-		query = new RegExp(exp);
+		if(combined){
+			query = new RegExp('^' + exp + '.*$', 'i');
+		} else {
+			query = new RegExp(exp, 'i');
+		}
 	}
+
+
 
 	return query;
 }
